@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>whiteman808@paraboletancza.org</email>
+		<name>whiteman808</name>
+	</maintainer>
+	<longdescription>
+		Provides a Ruby implementation of the XDG Base Directory Specification for managing common configurations without polluting your Dotfiles. XDG is great for command line interfaces or any application that needs a common configuration, cache, data, state, or runtime.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">bkuhlmann/xdg</remote-id>
+	</upstream>
+</pkgmetadata>
