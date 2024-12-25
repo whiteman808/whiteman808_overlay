@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=colorful_loop theme for plymouth
+EAPI=8
+HOMEPAGE=https://github.com/adi1090x/plymouth-themes
+KEYWORDS=~amd64
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=https://github.com/adi1090x/plymouth-themes/archive/5d8817458d764bff4ff9daae94cf1bbaabf16ede.tar.gz -> plymouth-theme-colorful_loop-1.0.tar.gz
+_md5_=917ffcf6bd5181b3876ef298bbbecb1a
