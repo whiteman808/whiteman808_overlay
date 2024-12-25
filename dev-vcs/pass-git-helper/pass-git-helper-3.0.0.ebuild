@@ -19,11 +19,10 @@ KEYWORDS="~amd64"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="app-admin/pass"
+RDEPEND="app-admin/pass dev-python/pyxdg[${PYTHON_USEDEP}]"
 BDEPEND="test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-mock[${PYTHON_USEDEP}]
-		dev-python/pyxdg[${PYTHON_USEDEP}]
 		${RDEPEND}
 	)
 "
