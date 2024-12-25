@@ -115,7 +115,7 @@ inherit cargo
 DESCRIPTION="Terminal image viewer with native support for iTerm and Kitty"
 HOMEPAGE="https://github.com/atanunq/viu"
 SRC_URI="
-	https://github.com/atanunq/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+	https://github.com/atanunq/viu/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
 LICENSE="MIT"
