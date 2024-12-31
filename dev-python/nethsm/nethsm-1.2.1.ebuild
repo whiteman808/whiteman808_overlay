@@ -10,6 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Python client for NitroKey NetHSM"
 HOMEPAGE="https://github.com/Nitrokey/nethsm-sdk-py"
 SRC_URI="https://github.com/Nitrokey/nethsm-sdk-py/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/nethsm-sdk-py-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
