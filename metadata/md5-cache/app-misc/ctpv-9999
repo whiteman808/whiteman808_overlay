@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=Image previews for lf file manager
+EAPI=8
+HOMEPAGE=https://github.com/NikitaIvanovV/ctpv
+INHERIT=git-r3
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=media-gfx/imagemagick app-misc/lf dev-libs/openssl
+SLOT=0
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=9b880353482d3352885e95193809d48c
