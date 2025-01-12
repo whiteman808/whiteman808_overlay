@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>whiteman808@paraboletancza.org</email>
+		<name>whiteman808</name>
+	</maintainer>
+	<use>
+		<flag name="browser-cookie3">Browser cookies support</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">instaloader/instaloader</remote-id>
+		<remote-id type="pypi">instaloader</remote-id>
+	</upstream>
+</pkgmetadata>
