@@ -11,6 +11,9 @@ HOMEPAGE="https://gitlab.com/shackra/goimapnotify"
 if [[ ${PV} == 9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://gitlab.com/shackra/goimapnotify.git"
+else
+	SRC_URI="https://gitlab.com/shackra/goimapnotify/-/archive/${PV}/${P}.tar.gz"
+	SRC_URI+=" https://git.paraboletancza.org/whiteman808/gentoo-distfiles/raw/branch/main/${CATEGORY}/${PN}/${P}-deps.tar.xz"
 fi
 
 LICENSE="GPL-3+"
