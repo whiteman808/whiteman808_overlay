@@ -13,6 +13,7 @@ SRC_URI+=" https://git.paraboletancza.org/whiteman808/gentoo-distfiles/raw/branc
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
+RESTRICT="strip test"
 
 src_compile() {
 	ego build
