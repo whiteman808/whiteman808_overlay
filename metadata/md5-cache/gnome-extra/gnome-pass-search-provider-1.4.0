@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install postinst
+DESCRIPTION=A search provider for GNOME Shell that adds support for search in pass
+EAPI=8
+HOMEPAGE=https://github.com/jle64/gnome-pass-search-provider
+INHERIT=desktop systemd optfeature
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=|| ( app-admin/pass app-admin/gopass app-admin/rbw ) gnome-base/gnome
+SLOT=0
+SRC_URI=https://github.com/jle64/gnome-pass-search-provider/archive/refs/tags/1.4.0.tar.gz -> gnome-pass-search-provider-1.4.0.gh.tar.gz
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	systemd	54bd206bb5c4efac6ae28b6b006713b0	optfeature	538bce96e5589935b57e178e8635f301
+_md5_=a3cd65855ca4da13aa995e10cc36bbb8

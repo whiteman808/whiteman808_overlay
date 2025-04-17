@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>whiteman808@paraboletancza.org</email>
+    <description>Primary maintainer</description>
+  </maintainer>
+  <longdescription>
+    A search provider for GNOME Shell that adds support for searching in:
+
+    zx2c4/pass
+    compatible alternatives such as gopass
+    or the rbw Bitwarden/Vaultwarden client
+
+    Names of entries will show up in GNOME Shell searches, choosing one will copy the corresponding content to the clipboard.
+  </longdescription>
+  <upstream>
+    <remote-id type="github">jle64/gnome-pass-search-provider</remote-id>
+  </upstream>
+</pkgmetadata>
