@@ -19,6 +19,7 @@ RDEPEND="
 	app-admin/rbw
 )
 gnome-base/gnome
+dev-python/thefuzz
 "
 
 src_install() {
