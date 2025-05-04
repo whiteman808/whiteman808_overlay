@@ -9,11 +9,17 @@ inherit distutils-r1
 
 DESCRIPTION="Download pictures (or videos) from Instagram."
 HOMEPAGE="https://instaloader.github.io/"
-SRC_URI="https://github.com/instaloader/instaloader/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+
+if [[ ${PV} = 9999* ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/instaloader/instaloader.git"
+else
+	SRC_URI="https://github.com/instaloader/instaloader/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 
 IUSE="browser-cookie3"
 BDEPEND="
