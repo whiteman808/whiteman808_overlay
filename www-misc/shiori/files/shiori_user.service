@@ -1,0 +1,11 @@
+[Unit]
+Description=shiori service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/shiori server
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

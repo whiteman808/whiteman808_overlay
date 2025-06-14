@@ -3,17 +3,25 @@
 
 EAPI=8
 
-inherit bash-completion-r1 edo go-module
+inherit shell-completion edo go-module systemd
 
 DESCRIPTION="Simple bookmarks manager written in the Go language."
 HOMEPAGE="https://github.com/go-shiori/shiori"
 SRC_URI="https://github.com/go-shiori/shiori/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 SRC_URI+=" https://git.paraboletancza.org/whiteman808/gentoo-distfiles/raw/branch/main/${CATEGORY}/${PN}/${P}-deps.tar.xz"
-
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
+
+IUSE="systemd"
 RESTRICT="strip test"
+DEPEND="dev-lang/go"
+BDEPEND="${DEPEND}"
+RDEPEND="
+	systemd? ( sys-apps/systemd )
+	acct-user/shiori
+	acct-group/shiori
+"
 
 src_compile() {
 	ego build
@@ -30,10 +38,9 @@ src_install() {
 	dobin shiori
 
 	newbashcomp "${PN}".bash "${PN}"
+	dofishcomp shiori.fish
+	newzshcomp shiori.zsh _shiori
 
-	insinto /usr/share/fish/vendor_completions.d
-	doins shiori.fish
-
-	insinto /usr/share/zsh/site-functions
-	newins shiori.zsh _shiori
+	systemd_dounit "${FILESDIR}"/shiori.service
+	systemd_newuserunit "${FILESDIR}"/shiori_user.service shiori.service
 }
