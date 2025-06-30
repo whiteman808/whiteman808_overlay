@@ -8,7 +8,7 @@ inherit shell-completion edo go-module systemd
 DESCRIPTION="Simple bookmarks manager written in the Go language."
 HOMEPAGE="https://github.com/go-shiori/shiori"
 SRC_URI="https://github.com/go-shiori/shiori/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://git.paraboletancza.org/whiteman808/gentoo-distfiles/raw/branch/main/${CATEGORY}/${PN}/${P}-deps.tar.xz"
+SRC_URI+=" https://codeberg.org/whiteman808/gentoo-distfiles/raw/branch/main/${CATEGORY}/${PN}/${P}-deps.tar.xz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
