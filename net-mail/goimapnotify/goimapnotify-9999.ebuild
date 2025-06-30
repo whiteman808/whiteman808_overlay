@@ -13,7 +13,7 @@ if [[ ${PV} == 9999* ]]; then
 	EGIT_REPO_URI="https://gitlab.com/shackra/goimapnotify.git"
 else
 	SRC_URI="https://gitlab.com/shackra/goimapnotify/-/archive/${PV}/${P}.tar.gz"
-	SRC_URI+=" https://codeberg.org/whiteman808/gentoo-distfiles/raw/branch/main/net-mail/goimapnotify/goimapnotify-2.4-deps.tar.xz"
+	SRC_URI+=" https://git.paraboletancza.org/whiteman808/gentoo-distfiles/raw/branch/main/${CATEGORY}/${PN}/${P}-deps.tar.xz"
 	KEYWORDS="~amd64"
 fi
 
