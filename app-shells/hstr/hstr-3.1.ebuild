@@ -14,7 +14,7 @@ if [[ ${PV} = *9999 ]]; then
 	S="${WORKDIR}/hstr-${PV}"
 else
 	SRC_URI="https://github.com/dvorka/hstr/archive/${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64 ~x86 ~arm64"
 	S="${WORKDIR}/hstr-${PV}"
 fi
 
