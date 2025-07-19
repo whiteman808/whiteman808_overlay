@@ -22,3 +22,8 @@ DEPEND="${RDEPEND}"
 PATCHES=(
 	"${FILESDIR}/${PN}-cleanup-setup.py.patch"
 )
+
+src_prepare() {
+	default
+	rm -r "${S}/tests"
+}
