@@ -13,7 +13,7 @@ HOMEPAGE="https://pypi.org/project/pkb-client/ https://github.com/infinityofspac
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~x86 ~arm64"
 
 RDEPEND=">=dev-python/requests-2.20.0[${PYTHON_USEDEP}]
 	>=dev-python/dnspython-2.6.0[${PYTHON_USEDEP}]"

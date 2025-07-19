@@ -13,7 +13,7 @@ HOMEPAGE="https://pypi.org/project/certbot-dns-porkbun/ https://github.com/infin
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~x86 ~arm64"
 
 RDEPEND="
 	>=app-crypt/certbot-1.18.0[${PYTHON_USEDEP}]
