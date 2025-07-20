@@ -1,2 +1,4 @@
 # Adjust the list below as needed, no need to make them all
 amd64 hardened-desktop-systemd stable
+amd64 hardened-gnome-systemd stable
+amd64 hardened-plasma-systemd stable
