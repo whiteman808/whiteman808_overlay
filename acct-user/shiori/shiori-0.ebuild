@@ -7,5 +7,6 @@ inherit acct-user
 
 ACCT_USER_ID=-1
 ACCT_USER_GROUPS=( shiori )
+ACCT_USER_HOME="/var/lib/shiori"
 
 acct-user_add_deps
